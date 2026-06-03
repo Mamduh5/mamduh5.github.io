@@ -426,6 +426,58 @@ h3 {
   padding: 72px 6vw;
 }
 
+.page-main {
+  background: var(--paper);
+}
+
+.page-hero {
+  padding: 70px 6vw 42px;
+  background: var(--sky);
+  border-bottom: 1px solid var(--line);
+}
+
+.page-hero h1 {
+  max-width: 13ch;
+  margin-bottom: 10px;
+  font-size: 3.4rem;
+}
+
+.page-subtitle {
+  margin-bottom: 0;
+  color: #344755;
+  font-weight: 800;
+}
+
+.legal-content {
+  width: min(880px, calc(100% - 12vw));
+  margin: 0 auto;
+  padding: 48px 0 72px;
+}
+
+.legal-content h2 {
+  margin-top: 34px;
+  font-size: 1.55rem;
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content p,
+.legal-content li {
+  color: #344755;
+}
+
+.legal-content a {
+  color: var(--blue);
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.legal-content ul {
+  padding-left: 22px;
+}
+
 .section:nth-of-type(3) {
   background: #f0f8f0;
 }
@@ -607,6 +659,11 @@ h3 {
     font-size: 3.2rem;
   }
 
+  .page-hero h1 {
+    max-width: 13ch;
+    font-size: 2.8rem;
+  }
+
   h2 {
     font-size: 1.85rem;
   }
@@ -639,9 +696,14 @@ h3 {
   .site-header,
   .section,
   .hero,
+  .page-hero,
   .site-footer {
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  .legal-content {
+    width: calc(100% - 40px);
   }
 
   .nav-links {
@@ -656,6 +718,10 @@ h3 {
 
   h1 {
     font-size: 2.65rem;
+  }
+
+  .page-hero h1 {
+    font-size: 2.35rem;
   }
 
   h2 {
